@@ -1,0 +1,14 @@
+ToyServer!
+
+2011, Matthew Erickson.
+
+A simple WSGI server for showing you what you're doing with HTTP
+clients.  May or may not be accurate representations of proper
+HTTP/1.1 or 1.0.
+
+To start, run server.py.  There are two command-line options:
+
+   -a : sets the listening address
+   -p : sets the listening port.
+
+Setting the envar TOYSERVER_LOG_DEBUG will increase the logging level.
