@@ -86,8 +86,8 @@ def app_factory():
     for each URL you want the server to respond to.
     '''
     urls = [
-        (re.compile(r'/get_target$'), ('GET', 'HEAD',), get_target),
-        (re.compile(r'/post_target$'), ('POST'), post_target),
+        (re.compile(r'/'), ('GET', 'HEAD',), get_target),
+        (re.compile(r'/'), ('POST'), post_target),
     ] 
     return router(urls)
 
